@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Loza - Summer Escape</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gameRoot">
+  <canvas id="game"></canvas>
+
+  <!-- On-screen controls -->
+  <div id="controls" aria-hidden="true">
+    <button id="leftBtn" class="control key">◀</button>
+    <button id="upBtn" class="control key">▲</button>
+    <button id="rightBtn" class="control key">▶</button>
+  </div>
+
+  <!-- Play music hint (only shown when autoplay blocked) -->
+  <button id="playHint" class="small-btn hidden">Play Music ▶</button>
+
+  <!-- Victory modal centered -->
+  <div id="winModal" class="hidden" role="dialog" aria-modal="true">
+    <div id="winBox">
+      <h2 id="winText">🎉 LOZA, I will miss you ❤️🌊☀️<br/>Enjoy your vacation my love 🐱💌</h2>
+      <div class="winButtons">
+        <button id="playAgain">Play Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
